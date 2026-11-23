@@ -1,0 +1,36 @@
+{
+  "chapter": 4,
+  "names": [
+    {"translit": "Al-Hayy", "arabic": "الحَيّ", "meaning": "The Ever-Living"},
+    {"translit": "Al-Qayyoom", "arabic": "القَيُّوم", "meaning": "The Self-Subsisting Sustainer"}
+  ],
+  "blocks": [
+    {"type": "p", "text": "Al-Hayy Al-Qayyoom - The Ever-Living The Self-Subsisting Sustainer of all the creation are two Names that come together in the Qur'aan in three places. The first occurrence is in Aayatul Kursee:"},
+    {"type": "quote", "text": "Allah! La ilaha illa Huwa (none has the right to be worshipped but He), the Ever Living, the One Who sustains and protects all that exists.", "ref": "Baqarah 2:255"},
+    {"type": "p", "text": "The second occurrence is at the beginning of Soorah Aali 'Imraan:"},
+    {"type": "quote", "text": "Allah! La ilaha illa Huwa (none has the right to be worshipped but He), the Ever Living, the One Who sustains and protects all that exists.", "ref": "Aali 'Imraan 3:2"},
+    {"type": "p", "text": "The third is in Soorah Taahaa:"},
+    {"type": "quote", "text": "And (all) faces shall be humbled before (Allah), the Ever Living, the One Who sustains and protects all that exists.", "ref": "Taahaa 20:111"},
+    {"type": "p", "text": "Allaah the Blessed and Exalted's Name al Hayy The Ever-Living contains an affirmation of Allaah's Attribute of Living. It is a complete Life not preceded by non-existence nor followed by it being taken away or ending. Allaah is Living without deficiency or defect and our Lord is Exalted and free from that."},
+    {"type": "p", "text": "Allaah's Name al Qayyoom contains affirmation of His Attribute of Self-Subsistence. It being that Allaah is Self-Subsisting and sustains His creation."},
+    {"type": "p", "text": "These two Names al Hayy and al Qayyoom both encompass the meanings of Allaah's Beautiful Names where all the Attributes of the Creator return back. The Attributes of Allaah's Self such as hearing, seeing, His Hand, Knowledge and so on return back to His Name al Hayy The Ever-Living. The Attributes of Allaah that are actions such as creation, providing, bestowing blessings, giving life, giving death and so on return back to His Name al Qayyoom. Due to this, the People of Knowledge have said that they are Allaah's greatest Names which if He is called on by them He answers and if He is asked by them He gives."}
+  ],
+  "keyPoints": [
+    "Al-Hayy and Al-Qayyoom come together in the Qur'aan in three places: Aayatul Kursee (2:255), the beginning of Aali 'Imraan (3:2) and Taahaa (20:111).",
+    "Al-Hayy affirms Allaah's Attribute of Life: a complete Life not preceded by non-existence nor followed by ending, without deficiency or defect.",
+    "Al-Qayyoom affirms His Attribute of Self-Subsistence: He is Self-Subsisting and sustains His creation.",
+    "The Attributes of Allaah's Self (hearing, seeing, His Hand, Knowledge) return back to al-Hayy.",
+    "The Attributes of action (creation, providing, bestowing blessings, giving life and death) return back to al-Qayyoom.",
+    "The People of Knowledge have said they are Allaah's greatest Names: if He is called on by them He answers and if asked by them He gives."
+  ],
+  "evidence": [
+    {"text": "Allah! La ilaha illa Huwa (none has the right to be worshipped but He), the Ever Living, the One Who sustains and protects all that exists.", "ref": "Baqarah 2:255"},
+    {"text": "And (all) faces shall be humbled before (Allah), the Ever Living, the One Who sustains and protects all that exists.", "ref": "Taahaa 20:111"}
+  ],
+  "recall": [
+    {"q": "What does Al-Hayy mean and what does it affirm?", "a": "The Ever-Living; it affirms Allaah's Attribute of Life, a complete Life not preceded by non-existence nor followed by it being taken away or ending."},
+    {"q": "What does Al-Qayyoom mean?", "a": "The Self-Subsisting Sustainer; it affirms His Attribute of Self-Subsistence, that He is Self-Subsisting and sustains His creation."},
+    {"q": "In which three places do Al-Hayy and Al-Qayyoom come together in the Qur'aan?", "a": "Aayatul Kursee (Baqarah 2:255), the beginning of Aali 'Imraan (3:2), and Taahaa (20:111)."},
+    {"q": "Which Attributes return back to al-Hayy and which to al-Qayyoom?", "a": "Attributes of Allaah's Self (hearing, seeing, His Hand, Knowledge) return to al-Hayy; Attributes of action (creation, providing, bestowing blessings, giving life and death) return to al-Qayyoom."}
+  ]
+}

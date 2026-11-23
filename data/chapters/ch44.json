@@ -1,0 +1,41 @@
+{
+  "chapter": 44,
+  "names": [
+    {"translit": "Al-Kafeel", "arabic": "الكَفِيل", "meaning": "The Witness"},
+    {"translit": "Al-Wakeel", "arabic": "الوَكِيل", "meaning": "The Guardian/Disposer of Affairs"}
+  ],
+  "blocks": [
+    {"type": "p", "text": "Allaah says,"},
+    {"type": "quote", "text": "and break not the oaths after you have confirmed them, and indeed you have appointed Allah your surety. Verily! Allah knows what you do.", "ref": "Nahl 16:91"},
+    {"type": "quote", "text": "But it (only) increased them in Faith, and they said: \"Allah (Alone) is Sufficient for us, and He is the Best Disposer of affairs (for us).\"", "ref": "Aali 'Imraan 3:173"},
+    {"type": "p", "text": "Al-Kafeel means the One responsible for the creation's affairs. The guarantor for their food and provisions. Whoever is truthful with Allaah in that and is pleased with Him as a guarantor, Allaah helps him to fulfil his duties and helps his affairs from where he would never imagine."},
+    {"type": "p", "text": "Al-Wakeel means Al-Kaafee The Sufficient, Al-Kafeel The Witness. It is general and specific."},
+    {"type": "p", "text": "The General Guardian which is referred to in Allaah's saying,"},
+    {"type": "quote", "text": "and He is the Wakil (Trustee, Disposer of affairs, Guardian, etc.) over all things.", "ref": "An'aam 6:102"},
+    {"type": "quote", "text": "And Allah is a Wakil (Disposer of affairs, Trustee, Guardian, etc.) over all things.", "ref": "Hood 11:12"},
+    {"type": "p", "text": "Meaning the guardian over provision and food for all of the creation. The One who undertakes the management of the affairs of creation and directs them."},
+    {"type": "p", "text": "The Specific Guardian which is referred to in Allaah's saying,"},
+    {"type": "quote", "text": "and put your trust in Allah. And Allah is Ever All-Sufficient as a Disposer of affairs.", "ref": "Nisaa 4:81"},
+    {"type": "quote", "text": "and they said: \"Allah (Alone) is Sufficient for us, and He is the Best Disposer of affairs (for us).\"", "ref": "Aali 'Imraan 3:173"},
+    {"type": "p", "text": "Meaning the best Sufficer for those who turn to Him and the Protector to those who seek refuge in Him. This is specific to His believing servants who put their trust in Him."},
+    {"type": "p", "text": "Putting your trust in Allaah alone is the foundation for all levels of the religion. Its status is that of the body to the head so just as the head cannot rest except upon the body, so too is the situation of faith, its levels and actions cannot rest except upon the trunk of putting your trust in Allaah (tawakkul)."}
+  ],
+  "keyPoints": [
+    "Al-Kafeel means the One responsible for the creation's affairs, the guarantor for their food and provisions.",
+    "Whoever is truthful with Allaah and pleased with Him as a guarantor, Allaah helps him fulfil his duties and helps his affairs from where he would never imagine.",
+    "Al-Wakeel means Al-Kaafee (The Sufficient) and Al-Kafeel, and its meaning is general and specific.",
+    "The general meaning: He is the guardian over the provision of all creation, managing and directing their affairs.",
+    "The specific meaning: He is the best Sufficer and Protector for His believing servants who put their trust in Him.",
+    "Putting trust in Allaah alone (tawakkul) is the foundation for all levels of the religion, like the body upon which the head rests."
+  ],
+  "evidence": [
+    {"text": "and indeed you have appointed Allah your surety. Verily! Allah knows what you do.", "ref": "Nahl 16:91"},
+    {"text": "\"Allah (Alone) is Sufficient for us, and He is the Best Disposer of affairs (for us).\"", "ref": "Aali 'Imraan 3:173"}
+  ],
+  "recall": [
+    {"q": "What does Al-Kafeel mean?", "a": "The One responsible for the creation's affairs; the guarantor for their food and provisions."},
+    {"q": "What does Al-Wakeel mean?", "a": "Al-Kaafee (The Sufficient) and Al-Kafeel; generally the One who manages the affairs of all creation, and specifically the best Sufficer and Protector for believers who trust in Him."},
+    {"q": "Which aayah is cited for the specific meaning of Al-Wakeel?", "a": "'and put your trust in Allah. And Allah is Ever All-Sufficient as a Disposer of affairs' (Nisaa 4:81) and 'Allah (Alone) is Sufficient for us, and He is the Best Disposer of affairs' (Aali 'Imraan 3:173)."},
+    {"q": "What example does the author give for the status of tawakkul in the religion?", "a": "It is like the body to the head: just as the head cannot rest except upon the body, faith, its levels and actions cannot rest except upon tawakkul."}
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "chapter": 22,
+  "names": [
+    {"translit": "Ash-Shaheed", "arabic": "الشَّهِيد", "meaning": "The Witness"},
+    {"translit": "Ar-Raqeeb", "arabic": "الرَّقِيب", "meaning": "The Ever-Watchful Guardian"}
+  ],
+  "blocks": [
+    {"type": "p", "text": "Ash-Shaheed The Witness is repeated in many places in the Qur'aan."},
+    {"type": "quote", "text": "and Allah is Sufficient as a Witness.", "ref": "Nisaa 4:79"},
+    {"type": "p", "text": "As for Ar-Raqeeb The Ever-Watchful Guardian, it is found in three places. One of those places Ar-Raqeeb is paired with Ash-Shaheed."},
+    {"type": "quote", "text": "Surely, Allah is Ever an All-Watcher over you.", "ref": "Nisaa 4:1"},
+    {"type": "quote", "text": "And Allah is Ever a Watcher over all things.", "ref": "Ahzaab 33:52"},
+    {"type": "quote", "text": "And I was a witness over them while I dwelt amongst them, but when You took me up, You were the Watcher over them, and You are a Witness to all things.", "ref": "Maa'idah 5:117"},
+    {"type": "p", "text": "Ash-Shaheed means He is acquainted with everything and nothing is hidden from Him. He hears all sounds hidden and apparent, He sees everything that exists – the minute and the great, the small and the big. His knowledge encompasses everything. He witnesses in favour of His servants and against them for what they have done."},
+    {"type": "p", "text": "Ar-Raqeeb means that He is acquainted with what the chests conceal, He knows what each soul earns. The One who protects the creation and subjects them to the best system and most complete management. He observes with His sight everything that can be seen with nothing being hidden from Him. He encompasses everything that can be heard with His hearing. He observes all of creation with His knowledge that encompasses everything."},
+    {"type": "p", "text": "Faith in this Name and what it encompasses instils in a servant that Allaah is observing Him in all of his actions and situations."},
+    {"type": "p", "text": "So knowing that Allaah is watching a person is the fruits of a servant knowing that Allaah observes him, sees him, hears his speech and is acquainted with what he is doing at all times, in every second, every breath and every blink of an eye."}
+  ],
+  "keyPoints": [
+    "Ash-Shaheed is repeated in many places in the Qur'aan; Ar-Raqeeb is found in three places, and in one of them (Maa'idah 5:117) it is paired with Ash-Shaheed.",
+    "Ash-Shaheed means He is acquainted with everything, hears all sounds, sees everything that exists, and witnesses in favour of His servants and against them.",
+    "Ar-Raqeeb means He is acquainted with what the chests conceal and what each soul earns, and protects the creation with the best system and most complete management.",
+    "Ar-Raqeeb observes everything with His sight, hearing and all-encompassing knowledge.",
+    "Faith in this Name instils in the servant that Allaah is observing him in all his actions and situations, at every second, breath and blink of an eye."
+  ],
+  "evidence": [
+    {"text": "and Allah is Sufficient as a Witness.", "ref": "Nisaa 4:79"},
+    {"text": "You were the Watcher over them, and You are a Witness to all things.", "ref": "Maa'idah 5:117"}
+  ],
+  "recall": [
+    {"q": "What does Ash-Shaheed mean?", "a": "He is acquainted with everything and nothing is hidden from Him; He hears all sounds, sees everything that exists, His knowledge encompasses everything, and He witnesses in favour of His servants and against them for what they have done."},
+    {"q": "What does Ar-Raqeeb mean?", "a": "He is acquainted with what the chests conceal and knows what each soul earns; the One who protects the creation and subjects them to the best system and most complete management, observing everything with His sight, hearing and knowledge."},
+    {"q": "In how many places is Ar-Raqeeb found in the Qur'aan?", "a": "Three places."},
+    {"q": "In which aayah are Ar-Raqeeb and Ash-Shaheed paired together?", "a": "Maa'idah 5:117: '...You were the Watcher over them, and You are a Witness to all things.'"}
+  ]
+}

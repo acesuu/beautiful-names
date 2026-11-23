@@ -1,0 +1,35 @@
+{
+  "chapter": 28,
+  "names": [
+    {"translit": "Al-Awwal", "arabic": "الأَوَّل", "meaning": "The First"},
+    {"translit": "Al-Aakhir", "arabic": "الآخِر", "meaning": "The Last"},
+    {"translit": "Adh-Dhaahir", "arabic": "الظَّاهِر", "meaning": "The Uppermost"},
+    {"translit": "Al-Baatin", "arabic": "البَاطِن", "meaning": "The Closest One"}
+  ],
+  "blocks": [
+    {"type": "p", "text": "These four Names are found together in one place in the Noble Qur'aan,"},
+    {"type": "quote", "text": "He is the First (nothing is before Him) and the Last (nothing is after Him), the Most High (nothing is above Him) and the Most Near (nothing is nearer than Him). And He is the All-Knower of everything.", "ref": "Hadeed 57:3"},
+    {"type": "p", "text": "The best explanation that clarifies the meanings of the Beautiful Names is found in the Prophetic Sunnah in the Prophet ﷺ calling upon his Lord with these Names. This calling upon Allaah includes a clarification of the meanings of these Names and what they indicate."},
+    {"type": "p", "text": "Abu Hurairah said:"},
+    {"type": "quote", "text": "\"The Messenger of Allah ﷺ used to order that when one of us goes to sleep, he should say: 'O Allah, Lord of the heavens and Lord of the earths, and our Lord, and the Lord of everything, splitter of the seed-grain and date-stone, Revealer of the Tawrah, the Injil and the Qur'an. I seek refuge in You from the evil of every evil that You are holding by the forelock. You are the First, there is nothing before You, You are the Last, there is nothing after You, Adh-Dhaahir, there is nothing above you, and Al-Baatin, there is nothing below You. Relieve me of my debt, and enrich me from poverty'.\"", "ref": "Jami' at-Tirmidhi 3400"},
+    {"type": "p", "text": "The Prophet ﷺ made clear in this comprehensive du'aa the meaning of each Name and negated what nullifies it. This is the highest level of clarification."}
+  ],
+  "keyPoints": [
+    "Al-Awwal, Al-Aakhir, Adh-Dhaahir and Al-Baatin are found together in one place in the Qur'aan: Hadeed 57:3.",
+    "The best explanation of the meanings of the Beautiful Names is found in the Prophetic Sunnah, in the Prophet ﷺ calling upon his Lord with these Names.",
+    "Al-Awwal: there is nothing before Him; Al-Aakhir: there is nothing after Him.",
+    "Adh-Dhaahir: there is nothing above Him; Al-Baatin: there is nothing below Him (in the hadeeth), and nothing is nearer than Him (in the aayah's translation).",
+    "In the du'aa before sleeping, the Prophet ﷺ made clear the meaning of each Name and negated what nullifies it, which is the highest level of clarification."
+  ],
+  "evidence": [
+    {"text": "He is the First (nothing is before Him) and the Last (nothing is after Him), the Most High (nothing is above Him) and the Most Near (nothing is nearer than Him).", "ref": "Hadeed 57:3"},
+    {"text": "You are the First, there is nothing before You, You are the Last, there is nothing after You, Adh-Dhaahir, there is nothing above you, and Al-Baatin, there is nothing below You.", "ref": "Jami' at-Tirmidhi 3400"}
+  ],
+  "recall": [
+    {"q": "What does Al-Awwal mean?", "a": "The First: there is nothing before Him."},
+    {"q": "What does Al-Aakhir mean?", "a": "The Last: there is nothing after Him."},
+    {"q": "What do Adh-Dhaahir and Al-Baatin mean?", "a": "Adh-Dhaahir (The Uppermost): there is nothing above Him. Al-Baatin (The Closest One): there is nothing below Him / nothing is nearer than Him."},
+    {"q": "In which aayah are these four Names found together?", "a": "Hadeed 57:3."},
+    {"q": "Where is the best explanation of these Names found, and when was the du'aa said?", "a": "In the Prophetic Sunnah: the du'aa the Prophet ﷺ ordered to be said when going to sleep (narrated by Abu Hurairah, Jami' at-Tirmidhi 3400)."}
+  ]
+}

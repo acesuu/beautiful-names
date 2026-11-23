@@ -1,0 +1,34 @@
+{
+  "chapter": 11,
+  "names": [
+    {"translit": "Al-Haadee", "arabic": "الهَادِي", "meaning": "The Guide"}
+  ],
+  "blocks": [
+    {"type": "p", "text": "Allaah mentioned this Name twice in the Qur'aan:"},
+    {"type": "quote", "text": "And verily, Allah is the Guide of those who believe, to the Straight Path.", "ref": "Haj 22:54"},
+    {"type": "quote", "text": "Thus have We made for every Prophet an enemy among the Mujrimun (disbelievers, polytheists, criminals, etc.). But Sufficient is your Lord as a Guide and Helper.", "ref": "Furqaan 25:31"},
+    {"type": "p", "text": "Al-Haadee The Guide means that He guides His servants, directs them and indicates what will give them happiness in this Life and the Next. Through His guidance He directs the living creatures to what will benefit them and protect them from what will harm them."},
+    {"type": "p", "text": "Allaah is the One who created the creation and guided them."},
+    {"type": "quote", "text": "Who has created (everything), and then proportioned it; And Who has measured (preordainments for each and everything even to be blessed or wretched); then guided.", "ref": "A'laa 87:2-3"},
+    {"type": "p", "text": "So He guided them to general guidance for their benefit. He made them prepared for what they were created for."},
+    {"type": "p", "text": "He guided to a guidance of clarification. He revealed the Books and sent Messengers. He legislated the legislation and rulings, halal (permissible) and haraam (impermissible). He clarified the foundations and the branches of the religion. He guided to and clarified the straight path which will lead to His pleasure and reward. He made clear the other (deviant) paths to warn the servants."},
+    {"type": "p", "text": "He guided His believing servants with the guidance of success to belief and obedience. He guided them to their stations in Paradise as He guided them in the world to take the means and paths leading to it. His Name al Haadee The Guide encompasses all types of guidance."}
+  ],
+  "keyPoints": [
+    "Allaah mentioned the Name Al-Haadee twice in the Qur'aan (Haj 22:54 and Furqaan 25:31).",
+    "Al-Haadee means He guides His servants, directs them and indicates what will give them happiness in this Life and the Next.",
+    "General guidance: He guided the creation to their benefit and prepared them for what they were created for.",
+    "Guidance of clarification: He revealed the Books, sent Messengers, legislated rulings and clarified the straight path and warned of deviant paths.",
+    "Guidance of success: He guided His believing servants to belief and obedience, and to their stations in Paradise; His Name al-Haadee encompasses all types of guidance."
+  ],
+  "evidence": [
+    {"text": "And verily, Allah is the Guide of those who believe, to the Straight Path.", "ref": "Haj 22:54"},
+    {"text": "But Sufficient is your Lord as a Guide and Helper.", "ref": "Furqaan 25:31"}
+  ],
+  "recall": [
+    {"q": "What does Al-Haadee (The Guide) mean?", "a": "He guides His servants, directs them and indicates what will give them happiness in this Life and the Next, directing living creatures to what benefits them and protecting them from what harms them."},
+    {"q": "How many times is Al-Haadee mentioned in the Qur'aan, and where?", "a": "Twice: Haj 22:54 and Furqaan 25:31."},
+    {"q": "What types of guidance does the author mention?", "a": "General guidance for the creation's benefit, guidance of clarification (Books, Messengers, rulings, the straight path), and guidance of success to belief and obedience, including guidance to their stations in Paradise."},
+    {"q": "What does the guidance of clarification include?", "a": "Revealing the Books, sending Messengers, legislating rulings of halaal and haraam, clarifying the foundations and branches of the religion, clarifying the straight path and making clear the deviant paths as a warning."}
+  ]
+}

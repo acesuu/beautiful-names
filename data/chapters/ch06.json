@@ -1,0 +1,35 @@
+{
+  "chapter": 6,
+  "names": [
+    {"translit": "Al-Khaaliq", "arabic": "الخَالِق", "meaning": "The Creator"},
+    {"translit": "Al-Baari'", "arabic": "البَارِئ", "meaning": "The Originator"},
+    {"translit": "Al-Musawwir", "arabic": "المُصَوِّر", "meaning": "The Fashioner"}
+  ],
+  "blocks": [
+    {"type": "p", "text": "Allaah combined these three Names in His Saying:"},
+    {"type": "quote", "text": "He is Allah, the Creator, the Inventor of all things, the Bestower of forms. To Him belong the Best Names.", "ref": "Hashr 59:24"},
+    {"type": "p", "text": "This means that He alone created the whole of creation; He invented all the inventions and bestowed the forms through His precise execution and perfected His creation of all beings. He created them, bestowed their forms and brought them forth at a suitable time for them. He measured His creation with the best of measuring and made them with the most precise making. He guided them for their benefit and gave everything a character suitable to it. Then He guided every creation to what it was fashioned and created for."},
+    {"type": "p", "text": "Al-Khaaliq The Creator gives measure to things according to His wisdom. Al-Baari' the Originator brings it into being after being nothing. Al Musawwir The Fashioner fashions the creation and created beings however He wills."},
+    {"type": "p", "text": "Ibnul Qayyim says:"},
+    {"type": "quote", "text": "So Al-Baari', al Musawwir are details to the meaning of the Name al Khaaliq. So Allaah, if He wants to create something He measures it with His Knowledge and wisdom, then He makes it - meaning He brings it into existence according to what He measured and decreed in the form that He wished and wanted.", "ref": "Shifaa al 'Aleel 1/366"},
+    {"type": "p", "text": "So these three Names in the aayah are in order: creation first - and that is decreeing and measuring the existence of the creation, then making it - which is bringing it into existence from non-existence, then He made it into a shape and form that He Willed."}
+  ],
+  "keyPoints": [
+    "Allaah combined these three Names in Hashr 59:24.",
+    "Al-Khaaliq The Creator gives measure to things according to His wisdom.",
+    "Al-Baari' The Originator brings it into being after being nothing.",
+    "Al-Musawwir The Fashioner fashions the creation and created beings however He wills.",
+    "Ibnul Qayyim said Al-Baari' and Al-Musawwir are details of the meaning of al-Khaaliq.",
+    "The three Names are in order: decreeing and measuring, then bringing into existence from non-existence, then giving shape and form."
+  ],
+  "evidence": [
+    {"text": "He is Allah, the Creator, the Inventor of all things, the Bestower of forms. To Him belong the Best Names.", "ref": "Hashr 59:24"}
+  ],
+  "recall": [
+    {"q": "What does Al-Khaaliq (The Creator) do, as explained in this chapter?", "a": "He gives measure to things according to His wisdom."},
+    {"q": "What does Al-Baari' (The Originator) mean?", "a": "He brings it into being after being nothing."},
+    {"q": "What does Al-Musawwir (The Fashioner) mean?", "a": "He fashions the creation and created beings however He wills."},
+    {"q": "Which aayah combines these three Names?", "a": "\"He is Allah, the Creator, the Inventor of all things, the Bestower of forms. To Him belong the Best Names.\" [Hashr 59:24]"},
+    {"q": "In what order do these three Names come, according to the author?", "a": "Creation first (decreeing and measuring), then making (bringing into existence from non-existence), then giving it the shape and form He Willed."}
+  ]
+}

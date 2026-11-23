@@ -1,0 +1,42 @@
+{
+  "chapter": 19,
+  "names": [
+    {"translit": "Al-'Alee", "arabic": "العَلِيّ", "meaning": "The Exalted"},
+    {"translit": "Al-A'laa", "arabic": "الأَعْلَى", "meaning": "The Most High"},
+    {"translit": "Al-Muta'aal", "arabic": "المُتَعَال", "meaning": "The Supreme and Exalted One"}
+  ],
+  "blocks": [
+    {"type": "p", "text": "Allaah said,"},
+    {"type": "quote", "text": "And He is the Most High, the Most Great.", "ref": "Baqarah 2:255"},
+    {"type": "quote", "text": "Glorify the Name of your Lord, the Most High", "ref": "'Alaa 87:1"},
+    {"type": "quote", "text": "All-Knower of the unseen and the seen, the Most Great, the Most High.", "ref": "Ra'd 13:9"},
+    {"type": "p", "text": "These Names indicate Allaah's absolute Highness from every aspect and consideration:"},
+    {"type": "p", "text": "* He is Al-'Alee The High in His Self (dhaat). He rose over the throne and is above and separate from all of the created beings. He said,"},
+    {"type": "quote", "text": "The Most Beneficent (Allah) rose over (Istawa) the (Mighty) Throne (in a manner that suits His Majesty).", "ref": "Taha 20:5"},
+    {"type": "p", "text": "He said in six aayaat in the Qur'aan,"},
+    {"type": "quote", "text": "then He rose over (Istawa) the Throne (really in a manner that suits His Majesty).", "ref": "A'raaf 7:54"},
+    {"type": "p", "text": "This means that He is above and rose over it high above in a manner that suits His Majesty, Perfection and Greatness."},
+    {"type": "p", "text": "* He is The High in His Esteem (qadr). He is High regarding His descriptions and greatness. His Attributes are magnificent and nothing is like them and no one's description can be close to them. Indeed the servants are incapable of comprehending even one of His Attributes."},
+    {"type": "p", "text": "* He is The High in His Control (qahr). He overcomes everything. The created beings come close to Him with their secrets. The forelocks of all the creation are in His Hand. None of them move or stay still except by His Permission. What He willed came to pass and what He did not will did not happen."},
+    {"type": "p", "text": "A servant's faith in Allaah's Highness above His creation instills in him the Greatness of Allaah, humbleness before Him and humility to Him. It removes shortcomings and defects from Him and makes him sincere in his worship. It distances him from taking partners and associates with Him. Allaah said,"},
+    {"type": "quote", "text": "That is because Allah He is the Truth (the only True God of all that exists, Who has no partners or rivals with Him), and what they (the polytheists) invoke besides Him, it is Batil (falsehood) And verily, Allah He is the Most High, the Most Great.", "ref": "Hajj 22:62"}
+  ],
+  "keyPoints": [
+    "These Names indicate Allaah's absolute Highness from every aspect and consideration.",
+    "He is High in His Self (dhaat): He rose over the Throne and is above and separate from all created beings, in a manner that suits His Majesty.",
+    "He is High in His Esteem (qadr): His Attributes are magnificent, nothing is like them, and the servants cannot comprehend even one of them.",
+    "He is High in His Control (qahr): He overcomes everything, the forelocks of all creation are in His Hand, and none moves or stays still except by His Permission.",
+    "Faith in His Highness instills humility and sincerity in worship and distances the servant from taking partners with Him."
+  ],
+  "evidence": [
+    {"text": "And He is the Most High, the Most Great.", "ref": "Baqarah 2:255"},
+    {"text": "The Most Beneficent (Allah) rose over (Istawa) the (Mighty) Throne (in a manner that suits His Majesty).", "ref": "Taha 20:5"}
+  ],
+  "recall": [
+    {"q": "What do the Names Al-'Alee, Al-A'laa and Al-Muta'aal indicate?", "a": "Allaah's absolute Highness from every aspect and consideration."},
+    {"q": "What are the three aspects of Allaah's Highness mentioned by the author?", "a": "High in His Self (dhaat), High in His Esteem (qadr), and High in His Control (qahr)."},
+    {"q": "What does Highness in His Self mean?", "a": "He rose over the Throne and is above and separate from all of the created beings, in a manner that suits His Majesty, Perfection and Greatness."},
+    {"q": "In how many aayaat does Allaah say He rose over (Istawa) the Throne, according to the book?", "a": "In six aayaat (e.g. A'raaf 7:54), besides Taha 20:5."},
+    {"q": "Which aayah contains 'the Most Great, the Most High' (Al-Kabeer Al-Muta'aal)?", "a": "Ra'd 13:9: 'All-Knower of the unseen and the seen, the Most Great, the Most High.'"}
+  ]
+}

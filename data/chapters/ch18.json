@@ -1,0 +1,39 @@
+{
+  "chapter": 18,
+  "names": [
+    {"translit": "Al-'Afuww", "arabic": "العَفُوّ", "meaning": "The Pardoner"},
+    {"translit": "Al-Ghafoor", "arabic": "الغَفُور", "meaning": "The Ever-Forgiving"}
+  ],
+  "blocks": [
+    {"type": "p", "text": "Allaah the Exalted said,"},
+    {"type": "quote", "text": "That is so. And whoever has retaliated with the like of that which he was made to suffer, and then has again been wronged, Allah will surely help him. Verily! Allah indeed is Oft-Pardoning, Oft-Forgiving.", "ref": "Hajj 22:60"},
+    {"type": "quote", "text": "For these there is hope that Allah will forgive them, and Allah is Ever Oft Pardoning, Oft-Forgiving.", "ref": "Nisaa 4:99"},
+    {"type": "p", "text": "Al-'Afuww The Pardoner. He is the One who wipes away bad deeds and overlooks sins. It has a similar meaning to Al-Ghafoor The Forgiver, but it is more far reaching than it."},
+    {"type": "p", "text": "Al-Ghufraan (forgiveness) indicates 'covering'. Al-'Afuww (pardoning) indicates 'wiping away'."},
+    {"type": "p", "text": "Wiping away is more extensive than covering. When both words are together (they have this separate meaning). However, when the word appears on its own then each of them carries the meaning of the other."},
+    {"type": "p", "text": "Allaah's Pardon is of two types:"},
+    {"type": "p", "text": "1. His general pardon of all the criminals from the disbelievers and other than them, by repelling the punishments that they have earned when they are more deserving of the removal of blessings. So they annoy Him by insults, shirk (polytheism) and other offenses whilst He pardons them, provides for them and abundantly bestows apparent and hidden blessings upon them. He lays out the world for them. He gives them its blessings, benefits and gives respite to them. He does not neglect them out of His Pardon and Forbearing."},
+    {"type": "p", "text": "2. His special Pardon and Forgiveness to those who turn in repentance, ask forgiveness, supplicate, worship and to those who are afflicted with trials for which they expect reward. So everyone who turns in repentance to Him with a sincere repentance - sincerely seeking His Face, generally and comprehensively, without hesitation nor persistence (upon the sin). Allaah will forgive him whatever the sin whether it is disbelief, disobedience or sin. All of these come under Allaah's Saying,"},
+    {"type": "quote", "text": "Say: \"O 'Ibadi (My slaves) who have transgressed against themselves (by committing evil deeds and sins)! Despair not of the Mercy of Allah, verily Allah forgives all sins. Truly, He is Oft-Forgiving, Most Merciful.", "ref": "Zumar 39:53"},
+    {"type": "p", "text": "The doors of His Pardon and Forgiveness are open. He has always been and will always be pardoning and forgiving. Allaah promised forgiveness and pardon to those who come with its prerequisites as Allaah said,"},
+    {"type": "quote", "text": "And verily, I am indeed Forgiving to him who repents, believes (in My Oneness, and associates none in worship with Me) and does righteous good deeds, and then remains constant in doing them, (till his death).", "ref": "Taha 20:82"}
+  ],
+  "keyPoints": [
+    "Al-'Afuww is the One who wipes away bad deeds and overlooks sins; it is similar in meaning to Al-Ghafoor but more far reaching.",
+    "Forgiveness (al-ghufraan) indicates covering, while pardoning (al-'afuww) indicates wiping away, which is more extensive; when mentioned alone, each carries the meaning of the other.",
+    "Allaah's general pardon covers all criminals, including disbelievers: He repels the punishments they earned and still provides for them and gives them respite.",
+    "His special pardon and forgiveness is for those who repent, seek forgiveness, supplicate, worship, and those afflicted with trials who expect reward.",
+    "Whoever repents sincerely is forgiven whatever the sin, even disbelief; the doors of His Pardon and Forgiveness are open."
+  ],
+  "evidence": [
+    {"text": "Verily! Allah indeed is Oft-Pardoning, Oft-Forgiving.", "ref": "Hajj 22:60"},
+    {"text": "Despair not of the Mercy of Allah, verily Allah forgives all sins. Truly, He is Oft-Forgiving, Most Merciful.", "ref": "Zumar 39:53"}
+  ],
+  "recall": [
+    {"q": "What does Al-'Afuww mean?", "a": "The One who wipes away bad deeds and overlooks sins."},
+    {"q": "What is the difference between Al-'Afuww and Al-Ghafoor when mentioned together?", "a": "Forgiveness (ghufraan) indicates covering, while pardoning ('afuww) indicates wiping away, which is more extensive. When either appears alone it carries the meaning of the other."},
+    {"q": "What are the two types of Allaah's Pardon?", "a": "1) His general pardon of all criminals, including disbelievers, by repelling the punishments they earned while still providing for them. 2) His special Pardon and Forgiveness for those who repent, seek forgiveness, supplicate, worship and are patient with trials hoping for reward."},
+    {"q": "Which aayah does the author cite to show that Allaah forgives all sins for the one who repents?", "a": "Zumar 39:53: 'Despair not of the Mercy of Allah, verily Allah forgives all sins...'"},
+    {"q": "Which aayah mentions the prerequisites for Allaah's forgiveness?", "a": "Taha 20:82: 'And verily, I am indeed Forgiving to him who repents, believes and does righteous good deeds, and then remains constant in doing them.'"}
+  ]
+}

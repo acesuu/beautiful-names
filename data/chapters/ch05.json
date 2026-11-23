@@ -1,0 +1,44 @@
+{
+  "chapter": 5,
+  "names": [
+    {"translit": "Al-Khaaliq", "arabic": "الخَالِق", "meaning": "The Creator"},
+    {"translit": "Al-Khallaaq", "arabic": "الخَلَّاق", "meaning": "The Ever-Creating"}
+  ],
+  "blocks": [
+    {"type": "p", "text": "The name of Allaah al Khaaliq is found in many places in the Qur'aan. For example:"},
+    {"type": "quote", "text": "He is Allah, the Creator, the Inventor of all things, the Bestower of forms.", "ref": "Hashr 59:24"},
+    {"type": "p", "text": "Al Khallaaq in the intensive form occurs in two places in the Qur'aan in the Sayings of Allaah the Exalted:"},
+    {"type": "quote", "text": "Verily, your Lord is the All-Knowing Creator.", "ref": "Hijr 15:86"},
+    {"type": "quote", "text": "Yes, indeed! He is the All-Knowing Supreme Creator.", "ref": "Yaseen 36:81"},
+    {"type": "p", "text": "Creation (al Khalq) refers to and means two matters:"},
+    {"type": "p", "text": "1. The first meaning of al Khalq is bringing something new into existence from nothing:"},
+    {"type": "quote", "text": "Do they not see that We have created for them of what Our Hands have created, the cattle, so that they are their owners.", "ref": "Yaseen 36:71"},
+    {"type": "p", "text": "2. The second meaning of al khalq is 'measuring/preparing/inventing' (in Arabic: taqdeer). They used to say 'he (khalaqa) the skins' which means he prepared it. Allaah's Saying:"},
+    {"type": "quote", "text": "and you only invent (takhluqoon) falsehood.", "ref": "Al Ankaboot 29:17"},
+    {"type": "p", "text": "Which means that you invent it and make people inclined to it."},
+    {"type": "p", "text": "So 'creating' (al khalq) when used to describe the actions of humans means taqdeer 'preparing or inventing'. As for 'creation' which carries the meaning of inventing and bringing into existence from nothing, then this is only for the Lord of all that exists. As Allaah the Exalted said:"},
+    {"type": "quote", "text": "Is there any creator other than Allah!", "ref": "Faatir 35:3"},
+    {"type": "quote", "text": "This is the creation of Allah. So show Me that which those (whom you worship), besides Him have created. Nay, the Zalimun (polytheists, wrong-doers and those who do not believe in the Oneness of Allah) are in plain error.", "ref": "Luqmaan 31:11"},
+    {"type": "p", "text": "Allaah did not create the creation without purpose, in vain or for fun. Allaah is far removed and purified from that. Indeed Allaah created them to worship Him and single Him out alone. Allaah the Exalted said,"},
+    {"type": "quote", "text": "Did you think that We had created you in play (without any purpose), and that you would not be brought back to Us? So Exalted is Allah, the True King, La ilaha illa Huwa (none has the right to be worshipped but He), the Lord of the Supreme Throne!", "ref": "Al Mu'minoon 23:115-116"}
+  ],
+  "keyPoints": [
+    "Al-Khaaliq is found in many places in the Qur'aan; Al-Khallaaq, the intensive form, occurs in two places (Hijr 15:86 and Yaseen 36:81).",
+    "The first meaning of al-khalq is bringing something new into existence from nothing.",
+    "The second meaning of al-khalq is taqdeer: measuring, preparing or inventing.",
+    "When used for humans, 'creating' only means taqdeer; creation in the sense of bringing into existence from nothing is only for the Lord of all that exists.",
+    "Allaah did not create the creation without purpose, in vain or for fun; He created them to worship Him and single Him out alone."
+  ],
+  "evidence": [
+    {"text": "He is Allah, the Creator, the Inventor of all things, the Bestower of forms.", "ref": "Hashr 59:24"},
+    {"text": "Verily, your Lord is the All-Knowing Creator.", "ref": "Hijr 15:86"},
+    {"text": "Is there any creator other than Allah!", "ref": "Faatir 35:3"}
+  ],
+  "recall": [
+    {"q": "What are the two meanings of creation (al-khalq) given by the author?", "a": "1) Bringing something new into existence from nothing; 2) measuring/preparing/inventing (taqdeer)."},
+    {"q": "What is the difference between Al-Khaaliq and Al-Khallaaq?", "a": "Al-Khaaliq (The Creator) is the normal form; Al-Khallaaq (The Ever-Creating) is the intensive form, which occurs in two places in the Qur'aan."},
+    {"q": "In which two places does Al-Khallaaq occur in the Qur'aan?", "a": "Hijr 15:86 (\"Verily, your Lord is the All-Knowing Creator\") and Yaseen 36:81."},
+    {"q": "What does 'creating' mean when used to describe the actions of humans?", "a": "Taqdeer, 'preparing or inventing'; creating from nothing is only for the Lord of all that exists."},
+    {"q": "Why did Allaah create the creation?", "a": "To worship Him and single Him out alone; He did not create them without purpose, in vain or for fun (Al Mu'minoon 23:115-116)."}
+  ]
+}

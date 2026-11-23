@@ -1,0 +1,37 @@
+{
+  "chapter": 38,
+  "names": [
+    {"translit": "Al-Haqq", "arabic": "الحَقّ", "meaning": "The True One"},
+    {"translit": "Al-Mubeen", "arabic": "المُبِين", "meaning": "The Clear and Manifest One"}
+  ],
+  "blocks": [
+    {"type": "p", "text": "As for Allaah's Name Al-Haqq The True One, it is found in ten places in the Noble Qur'aan."},
+    {"type": "quote", "text": "Such is Allah, your Lord in truth. So after the truth, what else can there be, save error? How then are you turned away?", "ref": "Yoonus 10:32"},
+    {"type": "quote", "text": "So Exalted be Allah, the True King, La ilaha illa Huwa (none has the right to be worshipped but He), the Lord of the Supreme Throne!", "ref": "Mu'minoon 23:116"},
+    {"type": "p", "text": "As for His Name Al-Mubeen The Clear and Manifest One, it is found in one place combined with the Name Al-Haqq The True One."},
+    {"type": "quote", "text": "On that Day Allah will pay them the recompense of their deeds in full, and they will know that Allah, He is the Manifest Truth.", "ref": "Noor 24:25"},
+    {"type": "p", "text": "Al-Mubeen means He is clear in His affair of Oneness and that He has no partner. The meaning of Al-Haqq is the One in whom there is no doubt or uncertainty - not in His Self, not in His Names and Attributes, not in His worship. He is the One that deserves to be worshipped in truth and nothing else has the right to be worshipped in truth besides Him."},
+    {"type": "p", "text": "He is The True One, His Names and Attributes are True, His Actions and speech are true. His religion and legislation is true, His news is all true, His promise is true and meeting Him is true."},
+    {"type": "p", "text": "The Prophet ﷺ used to begin his night salaah by confirming this meaning as in the hadeeth of Ibn 'Abbaas:"},
+    {"type": "quote", "text": "Whenever the Prophet ﷺ offered the night (Tahajjud) prayer, he used to say, \"O Allah! All the Praises are for You; You are the Light of the Heavens and the Earth. And all the Praises are for You; You are the Keeper of the Heavens and the Earth. All the Praises are for You; You are the Lord of the Heavens and the Earth and whatever is therein. You are the Truth, and Your Promise is the Truth, and Your Speech is the Truth, and meeting You is the Truth, and Paradise is the Truth and Hell (Fire) is the Truth and all the prophets are the Truth and the Hour is the Truth. O Allah! I surrender to You, and believe in You, and depend upon You, and repent to You, and in Your cause I fight and with Your orders I rule. So please forgive my past and future sins and those sins which I did in secret or in public. It is You Whom I worship, None has the right to be worshipped except You.\"", "ref": "Saheeh al-Bukhari 7499"},
+    {"type": "p", "text": "Allaah gave various proofs, evidences, arguments and clarifications that He is the True Deity having no partners and that worshipping others besides Him is falsehood, deviancy, turning away and weakness."},
+    {"type": "quote", "text": "That is because Allah He is the Truth (the only True God of all that exists, Who has no partners or rivals with Him), and what they (the polytheists) invoke besides Him, it is Batil (falsehood). And verily, Allah He is the Most High, the Most Great.", "ref": "Hajj 22:62"}
+  ],
+  "keyPoints": [
+    "Al-Haqq is found in ten places in the Qur'aan; Al-Mubeen is found in one place, combined with Al-Haqq (Noor 24:25).",
+    "Al-Mubeen means He is clear in His affair of Oneness and that He has no partner.",
+    "Al-Haqq means the One in whom there is no doubt or uncertainty - not in His Self, His Names and Attributes, or His worship; He alone deserves to be worshipped in truth.",
+    "His Names, Attributes, Actions, speech, religion, legislation, news and promise are all true, and meeting Him is true.",
+    "The Prophet ﷺ began his night prayer affirming this meaning: \"You are the Truth, and Your Promise is the Truth, and Your Speech is the Truth...\""
+  ],
+  "evidence": [
+    {"text": "...and they will know that Allah, He is the Manifest Truth.", "ref": "Noor 24:25"},
+    {"text": "That is because Allah He is the Truth..., and what they (the polytheists) invoke besides Him, it is Batil (falsehood).", "ref": "Hajj 22:62"}
+  ],
+  "recall": [
+    {"q": "What does Al-Haqq mean?", "a": "The True One: the One in whom there is no doubt or uncertainty - not in His Self, His Names and Attributes, nor His worship; He is the One who deserves to be worshipped in truth."},
+    {"q": "What does Al-Mubeen mean?", "a": "The Clear and Manifest One: He is clear in His affair of Oneness and that He has no partner."},
+    {"q": "How many times are Al-Haqq and Al-Mubeen found in the Qur'aan?", "a": "Al-Haqq in ten places; Al-Mubeen in one place, combined with Al-Haqq in Noor 24:25."},
+    {"q": "Which hadeeth does the author cite showing the Prophet ﷺ confirming this meaning?", "a": "The hadeeth of Ibn 'Abbaas about the night (Tahajjud) prayer: \"...You are the Truth, and Your Promise is the Truth, and Your Speech is the Truth, and meeting You is the Truth...\" (Bukhari 7499)."}
+  ]
+}

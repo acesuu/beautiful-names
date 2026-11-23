@@ -1,0 +1,42 @@
+{
+  "chapter": 8,
+  "names": [
+    {"translit": "Ar-Razzaaq", "arabic": "الرَّزَّاق", "meaning": "The Great Provider"},
+    {"translit": "Ar-Raaziq", "arabic": "الرَّازِق", "meaning": "The Best of Sustainers"}
+  ],
+  "blocks": [
+    {"type": "p", "text": "Allaah's Name Ar-Razzaaq The Great Provider is found in one place in the Qur'aan. Allaah the Exalted said,"},
+    {"type": "quote", "text": "Verily, Allah is the All-Provider, Owner of Power, the Most Strong.", "ref": "Dhaariyaat 51:58"},
+    {"type": "p", "text": "The name ar Raaziq The All-Provider occurs in the plural form in places of the Qur'aan such as Allaah's Saying,"},
+    {"type": "quote", "text": "And Allah is the Best of providers.", "ref": "Jumu'ah 62:11"},
+    {"type": "p", "text": "It is also found in the Sunnah as will come in (the explanation of the Names) Al-Qaabid Al-Baasit The Withholder The Granter of Extensive Provision."},
+    {"type": "p", "text": "So Allaah, the far removed from every imperfection, is ar Razzaaq The Great Provider. This means that He takes care of the servants' provisions and is the One Who is in charge over every person's requirements regarding provision. Allaah the Exalted said,"},
+    {"type": "quote", "text": "And no (moving) living creature is there on earth but its provision is due from Allah.", "ref": "Hood 11:6"},
+    {"type": "quote", "text": "And so many a moving (living) creature there is, that carries not its own provision! Allah provides for it and for you.", "ref": "Ankaboot 29:60"},
+    {"type": "p", "text": "Allaah's Provision for His servants is of two types (general and specific):"},
+    {"type": "p", "text": "General provision which encompasses the righteous people and the bad, the believer and the disbeliever, the first and the last. This is provision for the body:"},
+    {"type": "quote", "text": "And no (moving) living creature is there on earth but its provision is due from Allah.", "ref": "Hood 11:6"},
+    {"type": "p", "text": "Extensive provision in the worldly life is not a proof of a servant's nobility in Allaah's Sight. Just the same as restricted provision is not a proof that the servant is insignificant in Allaah's Sight."},
+    {"type": "quote", "text": "As for man, when his Lord tries him by giving him honour and gifts, then he says (puffed up): \"My Lord has honoured me.\" But when He tries him, by straitening his means of life, he says: \"My Lord has humiliated me!\" Nay! But you treat not the orphans with kindness and generosity (i.e. you neither treat them well, nor give them their exact right of inheritance)!", "ref": "Fajr 89:15-17"},
+    {"type": "p", "text": "This means that not everyone whom Allaah has blessed in the world is honoured in His Sight and not everyone who has restricted means is humiliated in Allaah's Sight. Wealth, poverty, ease and restriction are tests and trials from Allaah in order to know who is grateful or ungrateful, patient or impatient."},
+    {"type": "p", "text": "Specific Provision: This is the provision of the hearts - feeding them with knowledge, faith and halaal provision which help to rectify their religion. This is specific to the believers according to the levels that they deserve in accordance to His Wisdom and Mercy. Allaah completes His generosity upon them from Him by admitting them into blessed gardens on the Day of Resurrection. Allaah the Exalted says,"},
+    {"type": "quote", "text": "And whosoever believes in Allah and performs righteous good deeds, He will admit him into Gardens under which rivers flow (Paradise), to dwell therein forever. Allah has indeed granted for him an excellent provision.", "ref": "Talaq 65:11"}
+  ],
+  "keyPoints": [
+    "Ar-Razzaaq is found in one place in the Qur'aan (Dhaariyaat 51:58); Ar-Raaziq occurs in the plural form, such as 'the Best of providers' (Jumu'ah 62:11), and is also found in the Sunnah.",
+    "Ar-Razzaaq means He takes care of the servants' provisions and is in charge over every person's requirements regarding provision.",
+    "General provision is provision for the body and encompasses the righteous and the bad, the believer and the disbeliever.",
+    "Extensive or restricted worldly provision is not a proof of a servant's nobility or insignificance in Allaah's Sight; wealth and poverty are tests.",
+    "Specific provision is the provision of the hearts (knowledge, faith and halaal provision), specific to the believers, completed by admitting them into Paradise."
+  ],
+  "evidence": [
+    {"text": "Verily, Allah is the All-Provider, Owner of Power, the Most Strong.", "ref": "Dhaariyaat 51:58"},
+    {"text": "And no (moving) living creature is there on earth but its provision is due from Allah.", "ref": "Hood 11:6"}
+  ],
+  "recall": [
+    {"q": "What does Ar-Razzaaq (The Great Provider) mean?", "a": "He takes care of the servants' provisions and is the One Who is in charge over every person's requirements regarding provision."},
+    {"q": "Where is Ar-Raaziq (The Best of Sustainers) found?", "a": "In the plural form in places of the Qur'aan, such as \"And Allah is the Best of providers\" [Jumu'ah 62:11], and also in the Sunnah."},
+    {"q": "What are the two types of Allaah's provision?", "a": "General provision (for the body, for the righteous and the bad, believer and disbeliever) and specific provision (provision of the hearts: knowledge, faith and halaal provision, specific to the believers)."},
+    {"q": "Is extensive worldly provision a proof of a servant's nobility with Allaah?", "a": "No. Wealth, poverty, ease and restriction are tests from Allaah to know who is grateful or ungrateful, patient or impatient (Fajr 89:15-17)."}
+  ]
+}
