@@ -3,3 +3,5 @@ __pycache__/
 .firebase/
 firebase-debug.log
 firestore-debug.log
+shot-*.png
+*.png.tmp
