@@ -1,6 +1,6 @@
 // Offline support: network-first for the app's own files (so updates show up immediately),
 // falling back to the cache when offline. Fonts are cached on first use.
-const CACHE = "beautiful-names-v2";
+const CACHE = "beautiful-names-v3";
 const CORE = ["./", "index.html", "styles.css", "app.js", "data.js", "cloud.js", "firebase-config.js",
   "manifest.webmanifest", "icons/icon.svg", "icons/icon-192.png"];
 
@@ -18,7 +18,7 @@ self.addEventListener("fetch", (e) => {
   const url = new URL(req.url);
   if (url.origin === location.origin) {
     e.respondWith(
-      fetch(req)
+      fetch(req, { cache: "no-cache" }) // always revalidate with the server (GitHub Pages caches for 10 min)
         .then((res) => {
           if (res.ok) { const copy = res.clone(); caches.open(CACHE).then((c) => c.put(req, copy)); }
           return res;
