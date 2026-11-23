@@ -588,7 +588,18 @@
   // ---------- account / cloud ----------
   const C = () => window.Cloud || { status: "unconfigured" };
   function statsSummary() {
-    return { memorized: memorizedIds().length, total: TOTAL, streak: streak(), perDay: S.settings.perDay };
+    const activeDates = Object.keys(S.log).filter((d) => S.log[d].learned > 0 || S.log[d].reviewed > 0).sort();
+    const week = {};
+    for (let i = 0; i < 7; i++) {
+      const d = addDays(today(), -i);
+      if (S.log[d]?.learned) week[d] = S.log[d].learned;
+    }
+    return {
+      memorized: memorizedIds().length, total: TOTAL, streak: streak(), perDay: S.settings.perDay,
+      lastActive: activeDates[activeDates.length - 1] || "",
+      week, // names memorized per day over the last 7 days
+      reviews: Object.values(S.log).reduce((s, l) => s + (l.reviewed || 0), 0),
+    };
   }
   function avatar(u, size = 32) {
     const initial = esc((u.displayName || u.email || "?").trim()[0].toUpperCase());
@@ -657,7 +668,94 @@
   function refreshAuth() {
     const el = $("#authArea");
     if (el) el.innerHTML = authArea();
-    if (location.hash === "#profile") render();
+    const typing = document.activeElement?.tagName === "INPUT" && $("#app").contains(document.activeElement);
+    if ((location.hash === "#profile" || location.hash === "#leaderboard") && !typing) render();
+  }
+
+  // ---------- leaderboard ----------
+  let lbTab = "memorized";
+  const LB_TABS = {
+    memorized: { label: "Names memorized", unit: (v) => `${v} / ${TOTAL}` },
+    streak: { label: "Streak", unit: (v) => `${v} day${v === 1 ? "" : "s"} 🔥` },
+    week: { label: "This week", unit: (v) => `+${v}` },
+  };
+  function lbValue(e, tab) {
+    if (tab === "memorized") return e.memorized || 0;
+    if (tab === "streak") return e.lastActive && e.lastActive >= addDays(today(), -1) ? e.streak || 0 : 0; // broken streaks count as 0
+    const from = addDays(today(), -6);
+    return Object.entries(e.week || {}).reduce((s, [d, n]) => (d >= from ? s + n : s), 0);
+  }
+  function lbAvatar(e, size = 40) {
+    return e.photo
+      ? `<img class="avatar" src="${esc(e.photo)}" width="${size}" height="${size}" alt="" referrerpolicy="no-referrer" loading="lazy">`
+      : `<span class="avatar avatar-txt" style="width:${size}px;height:${size}px">${esc((e.name || "?").trim()[0]?.toUpperCase() || "?")}</span>`;
+  }
+  function vLeaderboard() {
+    const c = C();
+    const head = `<div class="card lb-hero"><div class="lb-trophy">🏆</div><div><h2 style="margin:0">Leaderboard</h2>
+      <p class="muted small" style="margin:0">Encourage each other in learning Allaah's Beautiful Names.</p></div></div>`;
+    if (c.status === "unconfigured" || c.status === "error")
+      return head + `<div class="card empty" style="margin-top:.75rem"><p class="muted">The leaderboard needs an internet connection and an account.</p></div>`;
+    if (!c.user)
+      return `<div class="stack">${head}<div class="card empty"><h3>Sign in to see the leaderboard</h3>
+        <p class="muted">Sign in with Google, then choose whether to join with a display name of your choice.</p>
+        <button class="btn google-btn big-btn" data-act="sign-in">${GOOGLE_G} Sign in with Google</button></div></div>`;
+    const lb = c.lb;
+    if (!lb.loading && !lb.error && (!lb.fetchedAt || Date.now() - lb.fetchedAt > 60000)) setTimeout(c.fetchLeaderboard);
+    const errBox = lb.error ? `<div class="card row" style="border-color:var(--warn);color:var(--warn)"><span style="flex:1">${esc(lb.error)}</span><button class="btn small" data-act="lb-refresh">Retry</button></div>` : "";
+
+    const joinCard = !lb.joined
+      ? `<div class="card"><h3>Join the leaderboard</h3>
+          <p class="muted small">Only the display name below${c.user.photoURL ? ", your photo (optional)" : ""} and your progress numbers are shown to other signed-in users. Your email is never shown. You can leave at any time.</p>
+          <div class="lb-form">
+            <label class="small muted" for="lbName">Display name</label>
+            <input id="lbName" class="search" maxlength="30" value="${esc(lb.name)}">
+            ${c.user.photoURL ? `<label class="lb-check"><input type="checkbox" id="lbPhoto" ${lb.showPhoto ? "checked" : ""}> Show my Google profile photo</label>` : ""}
+            <button class="btn primary" data-act="lb-join">Join leaderboard</button>
+          </div></div>`
+      : "";
+
+    let list = "";
+    if (lb.loading && !lb.entries) list = `<div class="card empty"><p class="muted">Loading…</p></div>`;
+    else if (lb.entries) {
+      const meId = c.user.uid;
+      const rows = lb.entries
+        .map((e) => ({ ...e, v: lbValue(e, lbTab) }))
+        .sort((a, b) => b.v - a.v || (b.memorized || 0) - (a.memorized || 0) || (a.name || "").localeCompare(b.name || ""));
+      // standard competition ranking (1, 2, 2, 4)
+      rows.forEach((r, i) => (r.rank = i && rows[i - 1].v === r.v ? rows[i - 1].rank : i + 1));
+      const me = rows.find((r) => r.uid === meId);
+      const medal = (r) => (r.v > 0 && r.rank <= 3 ? ["🥇", "🥈", "🥉"][r.rank - 1] : r.rank);
+      const rowHtml = (r) => `<li class="lb-row ${r.uid === meId ? "me" : ""} ${r.rank <= 3 && r.v > 0 ? "top" : ""}">
+          <span class="lb-rank">${medal(r)}</span>${lbAvatar(r)}
+          <span class="lb-name">${esc(r.name)}${r.uid === meId ? ' <span class="badge memorized">You</span>' : ""}
+            ${lbTab !== "memorized" ? `<span class="small muted">${r.memorized || 0} memorized</span>` : `<span class="lb-bar"><i style="width:${((r.memorized || 0) / TOTAL) * 100}%"></i></span>`}</span>
+          <span class="lb-val">${LB_TABS[lbTab].unit(r.v)}</span></li>`;
+      const shown = rows.slice(0, 100);
+      list = `<div class="card">
+        <div class="row" style="margin-bottom:.8rem">
+          <div class="seg" id="lbTabs">${Object.entries(LB_TABS).map(([k, t]) => `<button data-v="${k}" class="${k === lbTab ? "active" : ""}">${t.label}</button>`).join("")}</div>
+          <span class="spacer"></span>
+          <button class="btn ghost small" data-act="lb-refresh" ${lb.loading ? "disabled" : ""}>${lb.loading ? "Refreshing…" : "↻ Refresh"}</button>
+        </div>
+        ${me ? `<p class="small" style="margin:.2rem 0 .8rem">You're <b>#${me.rank}</b> of ${rows.length}.</p>` : ""}
+        ${rows.length ? `<ol class="lb-list">${shown.map(rowHtml).join("")}</ol>` : `<p class="muted">No one has joined yet. Be the first!</p>`}
+        ${me && !shown.includes(me) ? `<ol class="lb-list" style="margin-top:.5rem;border-top:1px dashed var(--line);padding-top:.5rem">${rowHtml(me)}</ol>` : ""}
+        ${lbTab === "streak" ? `<p class="small muted" style="margin-top:.8rem">A streak counts days in a row with any learning or review.</p>` : ""}
+        ${lbTab === "week" ? `<p class="small muted" style="margin-top:.8rem">Names memorized in the last 7 days.</p>` : ""}
+      </div>`;
+    }
+
+    const manage = lb.joined
+      ? `<details class="card"><summary style="cursor:pointer;font-weight:600">Leaderboard settings</summary>
+          <div class="lb-form" style="margin-top:.8rem">
+            <label class="small muted" for="lbName">Display name</label>
+            <input id="lbName" class="search" maxlength="30" value="${esc(lb.name)}">
+            ${c.user.photoURL ? `<label class="lb-check"><input type="checkbox" id="lbPhoto" ${lb.showPhoto ? "checked" : ""}> Show my Google profile photo</label>` : ""}
+            <div class="row"><button class="btn primary" data-act="lb-save">Save</button><button class="btn bad" data-act="lb-leave">Leave leaderboard</button></div>
+          </div></details>`
+      : "";
+    return `<div class="stack">${head}${errBox}${joinCard}${list}${manage}</div>`;
   }
 
   // ---------- router ----------
@@ -667,12 +765,12 @@
     let html;
     if (view === "learn" || (view === "review" && arg === "session")) html = vSession() ?? (view === "learn" ? vToday() : vReview());
     else if (view === "study") html = vStudy(arg);
-    else html = ({ dashboard: vDashboard, today: vToday, review: vReview, quiz: vQuiz, browse: vBrowse, settings: vSettings, profile: vProfile }[view] || vDashboard)();
+    else html = ({ dashboard: vDashboard, today: vToday, review: vReview, quiz: vQuiz, browse: vBrowse, settings: vSettings, profile: vProfile, leaderboard: vLeaderboard }[view] || vDashboard)();
     $("#app").innerHTML = html;
 
     const tab = view === "study" || view === "learn" ? "today" : view === "profile" ? "" : view;
     document.querySelectorAll("#tabs button, #bottomNav button").forEach((b) => b.classList.toggle("active", b.dataset.view === tab));
-    $("[data-view-link=settings]")?.classList.toggle("active", tab === "settings");
+    document.querySelectorAll("[data-view-link]").forEach((a) => a.classList.toggle("active", a.dataset.viewLink === tab));
     const due = dueIds().length;
     const db = $("#dueBadge");
     db.hidden = !due;
@@ -711,6 +809,7 @@
       seg.parentElement.querySelectorAll("button").forEach((b) => b.classList.toggle("active", b === seg));
       const pid = seg.parentElement.id;
       if (pid === "bFilter") { browseFilter.status = seg.dataset.v; render(); }
+      if (pid === "lbTabs") { lbTab = seg.dataset.v; render(); }
       if (pid === "frontSeg") { S.settings.cardFront = seg.dataset.v; S.settingsAt = Date.now(); save(); }
       return;
     }
@@ -722,6 +821,14 @@
       case "sign-out":
         if (!confirm("Sign out? Your progress stays saved in your account.")) return;
         return window.Cloud.signOut().then(() => { location.hash = "dashboard"; });
+      case "lb-join":
+        return C().joinLeaderboard($("#lbName").value, $("#lbPhoto")?.checked ?? false).then(() => toast("You've joined the leaderboard"));
+      case "lb-save":
+        return C().updateLeaderboardProfile($("#lbName").value, $("#lbPhoto")?.checked ?? false).then(() => toast("Saved"));
+      case "lb-leave":
+        if (!confirm("Leave the leaderboard? Your entry will be removed. Your own progress is not affected.")) return;
+        return C().leaveLeaderboard().then(() => toast("You've left the leaderboard"));
+      case "lb-refresh": return C().fetchLeaderboard();
       case "set-goal": return setGoal(el.dataset.n);
       case "set-goal-custom": return setGoal($("#goalInput").value);
       case "open-study": location.hash = `study/${id}`; return;

@@ -1,6 +1,6 @@
 // Offline support: network-first for the app's own files (so updates show up immediately),
 // falling back to the cache when offline. Fonts are cached on first use.
-const CACHE = "beautiful-names-v1";
+const CACHE = "beautiful-names-v2";
 const CORE = ["./", "index.html", "styles.css", "app.js", "data.js", "cloud.js", "firebase-config.js",
   "manifest.webmanifest", "icons/icon.svg", "icons/icon-192.png"];
 

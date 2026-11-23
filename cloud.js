@@ -39,8 +39,96 @@ if (cfg && cfg.apiKey) {
       } catch (e) {
         Cloud.error = e.message;
       }
+      if (lb.joined) await pushLeaderboard();
       notify();
     }
+
+    // ---------- leaderboard (opt-in, public-to-signed-in-users entry per user) ----------
+    const lb = (Cloud.lb = { joined: false, name: "", showPhoto: true, entries: null, loading: false, error: null });
+    const lbRef = (uid) => F.doc(db, "leaderboard", uid);
+    const lbErr = (e) => (e.code === "permission-denied"
+      ? "The leaderboard isn't enabled in the database yet (Firestore rules need updating)."
+      : e.message);
+
+    function lbPayload() {
+      const s = App.getStats();
+      return {
+        name: lb.name.slice(0, 30),
+        photo: lb.showPhoto ? (Cloud.user.photoURL || "").slice(0, 500) : "",
+        memorized: s.memorized, streak: s.streak, lastActive: s.lastActive,
+        week: s.week, reviews: s.reviews, updatedAt: F.serverTimestamp(),
+      };
+    }
+    async function pushLeaderboard() {
+      try {
+        await F.setDoc(lbRef(Cloud.user.uid), lbPayload(), { merge: true });
+        lb.error = null;
+        const me = lb.entries?.find((x) => x.uid === Cloud.user.uid);
+        if (me) Object.assign(me, lbPayload());
+      } catch (e) {
+        lb.error = lbErr(e);
+      }
+    }
+    async function loadLeaderboardMembership(user) {
+      try {
+        const snap = await F.getDoc(lbRef(user.uid));
+        lb.joined = snap.exists();
+        if (snap.exists()) {
+          lb.name = snap.data().name;
+          lb.showPhoto = !!snap.data().photo || !user.photoURL;
+        } else {
+          lb.name = (user.displayName || "").split(" ")[0] || "Student";
+        }
+        lb.error = null;
+      } catch (e) {
+        lb.joined = false;
+        lb.error = lbErr(e);
+      }
+    }
+    Cloud.fetchLeaderboard = async () => {
+      if (!Cloud.user || lb.loading) return;
+      lb.loading = true;
+      notify();
+      try {
+        const q = F.query(F.collection(db, "leaderboard"), F.orderBy("memorized", "desc"), F.limit(500));
+        const res = await F.getDocs(q);
+        lb.entries = res.docs.map((d) => ({ uid: d.id, ...d.data() }));
+        lb.fetchedAt = new Date();
+        lb.error = null;
+      } catch (e) {
+        lb.error = lbErr(e);
+      }
+      lb.loading = false;
+      notify();
+    };
+    Cloud.joinLeaderboard = async (name, showPhoto) => {
+      lb.name = name.trim().slice(0, 30) || "Student";
+      lb.showPhoto = showPhoto;
+      try {
+        await F.setDoc(lbRef(Cloud.user.uid), { ...lbPayload(), joinedAt: F.serverTimestamp() });
+        lb.joined = true;
+        lb.error = null;
+      } catch (e) {
+        lb.error = lbErr(e);
+      }
+      await Cloud.fetchLeaderboard();
+    };
+    Cloud.updateLeaderboardProfile = async (name, showPhoto) => {
+      lb.name = name.trim().slice(0, 30) || lb.name;
+      lb.showPhoto = showPhoto;
+      await pushLeaderboard();
+      await Cloud.fetchLeaderboard();
+    };
+    Cloud.leaveLeaderboard = async () => {
+      try {
+        await F.deleteDoc(lbRef(Cloud.user.uid));
+        lb.joined = false;
+        lb.entries = lb.entries?.filter((x) => x.uid !== Cloud.user.uid) || null;
+      } catch (e) {
+        lb.error = lbErr(e);
+      }
+      notify();
+    };
     Cloud.schedulePush = () => {
       clearTimeout(pushTimer);
       pushTimer = setTimeout(push, 1200);
@@ -78,10 +166,12 @@ if (cfg && cfg.apiKey) {
       if (!user) {
         Cloud.status = "signedOut";
         Cloud.lastSync = null;
+        Object.assign(lb, { joined: false, name: "", entries: null, error: null });
         return notify();
       }
       Cloud.status = "syncing";
       notify();
+      await loadLeaderboardMembership(user);
       try {
         const snap = await F.getDoc(docRef(user.uid));
         if (snap.exists() && snap.data().state) App.mergeRemote(JSON.parse(snap.data().state));

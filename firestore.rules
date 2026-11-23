@@ -1,13 +1,29 @@
 rules_version = '2';
 service cloud.firestore {
   match /databases/{database}/documents {
-    // Each signed-in user can read and write only their own progress document.
+    // Private progress: each signed-in user can read and write only their own document.
     match /users/{uid} {
       allow read, delete: if request.auth != null && request.auth.uid == uid;
       allow create, update: if request.auth != null && request.auth.uid == uid
         && (!('state' in request.resource.data)
             || (request.resource.data.state is string && request.resource.data.state.size() < 900000));
     }
+
+    // Leaderboard (opt-in): any signed-in user can read; you can only write/delete your own entry.
+    match /leaderboard/{uid} {
+      allow read: if request.auth != null;
+      allow delete: if request.auth != null && request.auth.uid == uid;
+      allow create, update: if request.auth != null && request.auth.uid == uid
+        && request.resource.data.keys().hasOnly(['name', 'photo', 'memorized', 'streak', 'lastActive', 'week', 'reviews', 'updatedAt', 'joinedAt'])
+        && request.resource.data.name is string && request.resource.data.name.size() > 0 && request.resource.data.name.size() <= 30
+        && request.resource.data.photo is string && request.resource.data.photo.size() <= 500
+        && request.resource.data.memorized is int && request.resource.data.memorized >= 0 && request.resource.data.memorized <= 104
+        && request.resource.data.streak is int && request.resource.data.streak >= 0 && request.resource.data.streak <= 5000
+        && request.resource.data.reviews is int && request.resource.data.reviews >= 0
+        && request.resource.data.lastActive is string && request.resource.data.lastActive.size() <= 10
+        && request.resource.data.week is map && request.resource.data.week.size() <= 7;
+    }
+
     // Everything else is closed.
     match /{document=**} {
       allow read, write: if false;
