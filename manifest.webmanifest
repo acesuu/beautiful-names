@@ -1,0 +1,16 @@
+{
+  "name": "Allaah's Beautiful Names Memorizer",
+  "short_name": "Beautiful Names",
+  "description": "Memorize Allaah's Beautiful Names with daily goals, flashcards, spaced review and progress tracking.",
+  "start_url": "./#dashboard",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#f6f3ec",
+  "theme_color": "#1d6b57",
+  "icons": [
+    { "src": "icons/icon-192.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "icons/icon-512.png", "sizes": "512x512", "type": "image/png" },
+    { "src": "icons/icon-maskable-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
+  ]
+}

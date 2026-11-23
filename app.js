@@ -294,7 +294,7 @@
     return `<div class="stack">
       <div class="card hero">
         <div class="ring">
-          <svg width="170" height="170"><circle class="track" cx="85" cy="85" r="70" fill="none" stroke-width="14"/>
+          <svg width="170" height="170" viewBox="0 0 170 170"><circle class="track" cx="85" cy="85" r="70" fill="none" stroke-width="14"/>
           <circle class="bar" cx="85" cy="85" r="70" fill="none" stroke-width="14" stroke-dasharray="${C}" stroke-dashoffset="${C * (1 - pct)}"/></svg>
           <div class="ring-label"><b>${mem}</b><span>of ${TOTAL} memorized</span></div>
         </div>
@@ -369,7 +369,7 @@
           </div>`;
         })
         .join("")}</div>` : ""}
-      <div class="row">
+      <div class="row today-actions">
         ${pending.length ? `<button class="btn primary" data-act="test-today">Test me on today's ${pending.length} Name${pending.length > 1 ? "s" : ""}</button>` : ""}
         ${!allDone ? `<button class="btn" data-act="more-today">+ Learn one more today</button>` : ""}
       </div>
@@ -670,12 +670,16 @@
     else html = ({ dashboard: vDashboard, today: vToday, review: vReview, quiz: vQuiz, browse: vBrowse, settings: vSettings, profile: vProfile }[view] || vDashboard)();
     $("#app").innerHTML = html;
 
-    const tab = view === "study" || view === "learn" ? "today" : view;
-    document.querySelectorAll("#tabs button").forEach((b) => b.classList.toggle("active", b.dataset.view === tab));
+    const tab = view === "study" || view === "learn" ? "today" : view === "profile" ? "" : view;
+    document.querySelectorAll("#tabs button, #bottomNav button").forEach((b) => b.classList.toggle("active", b.dataset.view === tab));
+    $("[data-view-link=settings]")?.classList.toggle("active", tab === "settings");
     const due = dueIds().length;
     const db = $("#dueBadge");
     db.hidden = !due;
     db.textContent = due;
+    $("#dueDot").hidden = !due;
+    // "focus mode": a flashcard session or quiz in progress hides the bottom tab bar on phones
+    document.body.classList.toggle("focus", !!session || (view === "quiz" && !!quiz));
     refreshAuthArea();
   }
   function refreshAuthArea() {
@@ -696,7 +700,7 @@
   // ---------- events ----------
   document.addEventListener("click", (e) => {
     if (e.target.closest("[data-close]")) return closeModal();
-    const tabBtn = e.target.closest("#tabs button");
+    const tabBtn = e.target.closest("#tabs button, #bottomNav button");
     if (tabBtn) {
       if (tabBtn.dataset.view === "quiz") quiz = null;
       location.hash = tabBtn.dataset.view;
