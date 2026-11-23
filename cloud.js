@@ -55,8 +55,13 @@ if (cfg && cfg.apiKey) {
           return A.signInWithRedirect(auth, provider);
         }
         if (e.code !== "auth/popup-closed-by-user" && e.code !== "auth/cancelled-popup-request") {
-          Cloud.error = e.message;
-          alert("Sign-in failed: " + e.message);
+          const msg = {
+            "auth/unauthorized-domain": `This website (${location.hostname}) isn't authorized for sign-in yet. Add it under Firebase → Authentication → Settings → Authorized domains.`,
+            "auth/operation-not-allowed": "Google sign-in isn't enabled yet. Enable it under Firebase → Authentication → Sign-in method → Google.",
+            "auth/network-request-failed": "Network error, please check your connection and try again.",
+          }[e.code] || e.message;
+          Cloud.error = msg;
+          alert("Sign-in failed: " + msg);
           notify();
         }
       }
